@@ -5,4 +5,4 @@
 - dijkstra.cpp: dijkstra算法
 - floyd.cpp: floyd算法
 - sieve.cpp: 筛素数算法
-
+- kruskal.cpp: kruskal算法

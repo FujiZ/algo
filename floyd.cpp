@@ -6,6 +6,19 @@ using namespace std;
 
 int mat[MAX][MAX];
 
+void init(int n,int m){
+	for(int i=0;i<n;++i)
+		for(int j=0;j<n;++j)
+			mat[i][j]=INT_MAX;
+	for(int i=0;i<m;++i){
+		int a,b,l;
+		cin>>a>>b>>l;
+		mat[a][b]=l;
+	}
+	for(int i=0;i<n;++i)
+		mat[i][i]=0;
+}
+
 void floyd(int n){
 	for(int k=0;k<n;++k)
 		for(int i=0;i<n;++i)
@@ -20,16 +33,7 @@ void floyd(int n){
 int main(void){
 	int n,m;
 	cin>>n>>m;
-	for(int i=0;i<n;++i)
-		for(int j=0;j<n;++j)
-			mat[i][j]=INT_MAX;
-	for(int i=0;i<m;++i){
-		int a,b,l;
-		cin>>a>>b>>l;
-		mat[a][b]=l;
-	}
-	for(int i=0;i<n;++i)
-		mat[i][i]=0;
+	init(n,m);
 	floyd(n);
 	for(int i=0;i<n;++i){
 		for(int j=0;j<n;++j)
