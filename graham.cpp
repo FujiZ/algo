@@ -28,9 +28,9 @@ int multi(const Point& p1,const Point& p2,const Point& p0){
 
 bool cmp(Point* a,Point* b){	//当false时交换
 	//按极角大小进行排序
-	//若极角相同则按距离
 	int k=multi(*a,*b,*point0);
 	if(k>0) return true;
+	//若极角相同则按距离
 	else if(k==0) return distance(*a,*point0)<distance(*b,*point0);
 	else return false;
 }
