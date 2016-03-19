@@ -8,3 +8,6 @@
 - kruskal.cpp: kruskal算法
 - prim.cpp: prim算法
 - topo.cpp: 拓扑排序
+- graham.cpp: 凸包算法
+- perm.cpp: 全排列算法(递归)
+
