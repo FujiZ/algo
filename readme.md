@@ -1,4 +1,4 @@
-# Simple Algorithm
+# Basic Algorithm
 为蓝桥杯准备的基本算法
 - bfs.cpp: 广度优先搜索
 - dfs.cpp: 深度优先搜索
